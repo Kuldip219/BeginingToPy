@@ -16,3 +16,5 @@ Exam_Marks.append(M6)
 Exam_Marks.sort()
 
 print(Exam_Marks)
+print("Lowest mark is:", Exam_Marks[0])
+print("Highest mark is:", Exam_Marks[-1])
