@@ -6,7 +6,7 @@ sub_3 = int(input("Enter marks for Subject 3: "))
 total_marks = sub_1 + sub_2 + sub_3
 percentage = (total_marks / 300) * 100
 
-if percentage >= 40:
+if percentage >= 40 and sub_1 >= 33 and sub_2 >= 33 and sub_3 >= 33:
     print("Congratulations! You have passed the exam.")
 
 else:
