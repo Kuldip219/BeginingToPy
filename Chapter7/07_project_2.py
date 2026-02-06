@@ -4,3 +4,10 @@ for i in range (50):
     print(i)
 
 # This code prints numbers from 0 to 25 using a for loop and breaks the loop when i is equal to 26.
+
+for i in range (50):
+    if i == 26:
+        continue
+    print(i)
+
+# This code prints numbers from 0 to 49 using a for loop but skips the number 26 using the continue statement.
