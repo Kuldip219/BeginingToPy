@@ -1,9 +1,14 @@
 def remove(lst, value):
-    if value in lst:
-        lst.remove(value)
-    
+    n = []
+    for item in lst:
+        if not(item == value):
+            n.append(item.strip(value))
+    return n
 
-lst = ["Brinto", "Dip", "Tirtha", "Prodip", "Sourav", "Kuldip"]
-value = input("Please enter the value to remove from the list: ")
-remove(lst, value)
-print("The updated list is:", lst)
+list = ["Brinto", "Dip", "Tirtha", "Prodip", "Sourav", "Kuldip"]
+lst = [item.lower() for item in list]
+name = input("Enter the name you want to remove: ")
+value = name.lower()
+print(remove(lst, value))
+
+# End of the code
