@@ -6,3 +6,5 @@ f = open("09_project_1.txt", "w")
 f.write(para)
 
 f.close()
+
+# End of the code snippet.
