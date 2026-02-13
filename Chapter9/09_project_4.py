@@ -3,14 +3,14 @@ import random
 def game():
     print("You are now playing the game...")
     score = random.randint(0, 100)
-    with open("Chapter9/hiscore.txt") as f:
+    with open("File_Io/hiscore.txt") as f:
         hiscore = f.read()
         if hiscore != "":
             hiscore = int(hiscore)
         else:
             hiscore = 0
 
-    with open("Chapter9/hiscore.txt", "w") as f:
+    with open("File_Io/hiscore.txt", "w") as f:
         if score > hiscore:
             f.write(str(score))
             print("Congratulations! You have the new high score:", score)
