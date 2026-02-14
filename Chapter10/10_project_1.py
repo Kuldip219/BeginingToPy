@@ -4,6 +4,9 @@ class student():
     subject = "Math"
     grade = "A+"
 
+    def info(self):
+        print(self.name, self.age, self.subject, self.grade)
+
 a = student()
 a.name = input("Enter name: ")
-print(a.name, a.age, a.subject, a.grade)
+a.info()
