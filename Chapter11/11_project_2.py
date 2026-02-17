@@ -1,5 +1,5 @@
-class salary:
-    def __init__(self, name, salary):
+class Employee:
+    def __init__(self, name, Employee):
         self.name = name
         self.salary = salary
 
@@ -8,5 +8,5 @@ class salary:
     
 a = input("Enter your name: ")
 b = input("Enter your salary: ")
-m = salary(a, b)
+m = Employee(a, b)
 print(m)
