@@ -1,6 +1,9 @@
+from functools import reduce
+
 # This is a simple example of using a lambda function and map function.
 
-l = [1, 2, 3, 4, 5]
+
+l = [1, 2, 3, 4, 5, 6]
 
 cube = lambda x: x ** 3
 
@@ -17,3 +20,10 @@ def even(n):
 
 even_numbers = list(filter(even, l))
 print(even_numbers)
+
+# This is a simple example of using a reduce function.
+
+def sum(a, b):
+    return a + b
+
+print(reduce(sum, l))
