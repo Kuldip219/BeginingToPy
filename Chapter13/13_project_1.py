@@ -7,5 +7,13 @@ cube = lambda x: x ** 3
 cubed_l = list(map(cube, l))
 print(cubed_l)
 
+# This is a simple example of using a filter function.
 
+def even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
 
+even_numbers = list(filter(even, l))
+print(even_numbers)
