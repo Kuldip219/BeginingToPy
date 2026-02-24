@@ -5,5 +5,9 @@ import pyttsx3
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
 
-
+if __name__ == "__main__":
+    speak("Hello! I am Gipsy, your personal assistant. How may I help you today?")
