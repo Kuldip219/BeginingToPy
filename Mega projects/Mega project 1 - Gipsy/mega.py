@@ -9,10 +9,12 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
+def processcommand(c):
+    print(c)
+
 
 if __name__ == "__main__":
     speak("Hello! I am Gipsy, your personal assistant.")
-    print("OK")
     while True:
         r = sr.Recognizer()
         try:
@@ -22,10 +24,14 @@ if __name__ == "__main__":
 
                 print("Listening...")
                 audio = r.listen(source)
-
-                print("Recognizing...")
                 word = r.recognize_google(audio)
-                print(word)
+                if(word.lower() == "Gipsy".lower()):
+                    speak("Yes, how can I help you?")
+                    print("Listening...")
+                    audio = r.listen(source)
+                    command = r.recognize_google(audio)
+
+                    processcommand(command)
 
         except Exception as e:
             print("Error; {0}".format(e))        
